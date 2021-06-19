@@ -1,0 +1,291 @@
+@import 'utilities.css';
+:root{
+	--primary:#3DCFD3;
+	--dark:#161616;
+	--pure:#FFFFFF;
+	--ternary:#898989;
+	--light:#F2F2F2;
+}
+body{
+    font-family:'sans-serif';
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+
+}
+
+
+
+
+header{
+    background: var(--dark);
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 69% 86%, 0 100%);
+}
+
+.container{
+    max-width: 1000px;
+    padding: 0 10px;
+    margin: 0 auto;
+}
+
+header nav .left a{
+    color:var(--pure);
+    text-decoration: none;
+    margin-right: 2rem;
+}
+
+header nav .left a:hover{
+    color:#3DCFD3;
+}
+
+header nav{
+    padding: 2rem 0;
+}
+
+header nav .branding{
+    margin-right: 3rem;
+}
+
+.first{
+    padding: 3rem 0;
+}
+
+.first .left img{
+    width: 400px;
+    border-radius: 50%;
+}
+
+.first .right{
+    color: var(--pure);
+    margin-bottom: 0.5rem;
+    margin-top: -6rem;
+}
+
+.first .right h6{
+    font-size: 1.6rem;
+    color: var(--primary);
+}
+
+.first .right h1{
+    font-size: 4rem;
+    line-height: 0.91 ;
+    font-weight: 120;
+    margin-bottom: 2.2rem;
+}
+
+.first .right p{
+    font-size:1.1rem ;
+    line-height: 0.6cm;
+}
+
+.first .right span{
+    color: var(--primary);
+}
+
+
+.ABOUT h1 span{
+    color: var(--primary);
+}
+
+section{
+    padding: 6rem 0;
+}
+
+
+.ABOUT h1{
+    font-weight:400 ;
+    margin-bottom: 1rem;
+}
+
+.ABOUT h3{
+    font-weight: 450;
+    margin-bottom: 1rem;
+}
+
+.ABOUT p{
+    line-height: 00.6cm;
+    color: var(--ternary);
+    margin-bottom: 2rem;
+}
+
+section.ABOUT .social{
+    display: flex;
+}
+
+section.ABOUT .social a{
+    background: var(--ternary);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 45px;
+    height: 35px;
+    border-radius: 50%;
+    margin-right: 0.6rem;
+}
+
+section.ABOUT .social a:hover{
+    background: var(--primary);
+}
+
+section.ABOUT .social a img{
+    width: 100%;
+    height: 100%;
+    padding: 0.5rem;
+}
+
+section.photo-1{
+    background: rgb(43, 86, 134);
+     clip-path: polygon(100% 55%, 100% 72%, 0 72%, 0 54%);
+    margin-bottom: 2rem;
+}
+
+.content-table{
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 1.5rem;
+    min-width: 1000px;
+    border-radius: 5px 5px 0 0;
+    overflow: hidden;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.15);
+}
+
+.content-table thead tr{
+    background-color: azure;
+    color: var(--ternary);
+    text-align: center;
+    font-weight: bold;
+}
+
+.ed{
+    color: var(--primary);
+    text-align: center;
+    font-size: 2.3rem;
+    margin-bottom: 2rem;
+}
+
+tbody{
+    text-align: center;
+}
+
+
+
+.content-table th,
+.content-table td{
+    padding: 12px 15px;
+}
+
+.content-table tbody tr{
+    border-bottom: 2px solid #dddddd;
+}
+
+
+section.photo{
+    background: wheat;
+     clip-path: polygon(100% 55%, 100% 72%, 0 72%, 0 54%);
+    margin-bottom: 2rem;
+}
+
+.CONTACT  h1 span{
+    color: var(--primary);
+}
+.CONTACT{
+    text-align: center;
+}
+section.CONTACT .card-wrapper{
+    display:grid;
+    grid-template-columns: repeat(3,1fr);
+    grid-gap:3rem;
+}
+
+.talagap{
+    margin-bottom: 4rem;
+}
+
+section.CONTACT .card-wrapper .card{
+    text-align: center;
+}
+
+section.CONTACT .card-wrapper .card img{
+    margin-bottom: 1rem;
+}
+
+section.CONTACT .card-wrapper .card h2{
+    font-family: sans-serif;
+    font-weight: 400;
+}
+
+section.CONTACT .card-wrapper .card h6{
+    margin-top: 0.6rem;
+    color: var(--ternary);
+    font-size: 1rem;
+}
+
+section.CONTACT .input-1{
+    display: grid;
+    grid-template-columns: repeat(2,1fr);
+    grid-gap: 2rem;
+    margin-bottom:2rem ;
+    margin-top: 4rem;
+}
+
+section.CONTACT .input-2{
+    display: flex;
+    flex-direction: column;
+    margin-top: -1rem;
+}
+
+section.CONTACT input{
+    padding: 0.5rem;
+    border: 1px solid var(--light);
+    font-size: 0.9rem;
+    margin-bottom: 1rem;
+
+}
+
+
+
+section.CONTACT .input-2 textarea{
+    margin-bottom: 2rem;
+    padding: 0.55rem;
+    border: 1px solid var(--light);
+    font-size: 1rem;
+}
+
+section.CONTACT .input-2 textarea, section.CONTACT input{
+    outline: none;
+}
+
+section.CONTACT button{
+    margin-bottom: 2rem;
+}
+
+footer{
+    background:lightgray ;
+    text-align: center;
+    padding: 3rem 0;
+    
+}
+
+footer .footer-socials a{
+    margin-right: 2rem;
+}
+
+footer .footer-socials a img{
+    margin-top: 1.5rem;
+}
+
+footer .last{
+    color: var(--ternary);
+    margin-top: 2rem;
+}
+
+
+
+
